@@ -1,149 +1,189 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 MICHER — Agente Financeiro Inteligente com IA Generativa
 
-## Contexto
+MICHER é um agente financeiro inteligente que vai além de chatbots tradicionais, utilizando IA Generativa para oferecer orientação financeira personalizada, pró-ativa e confiável, antecipando necessidades e cocriando soluções financeiras com o usuário a partir de seus dados.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Este repositório contém um projeto completo com:
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+✔ Documentação
+✔ Base de conhecimento mockada
+✔ Exemplos de prompts
+✔ Protótipo funcional
+✔ Templates de avaliação
+✔ Pitch de apresentação
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Projeto desenvolvido a partir de um fork do desafio BIA do Futuro.
 
----
+📌 Índice
 
-## O Que Você Deve Entregar
+💡 Visão Geral
 
-### 1. Documentação do Agente
+📂 Estrutura do Projeto
 
-Defina **o que** seu agente faz e **como** ele funciona:
+🛠 O que Entregar
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+🚀 Como Usar
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+📈 Próximos Passos
 
----
+🤝 Contribuição
 
-### 2. Base de Conhecimento
+📄 Licença
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+💡 Visão Geral
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+O MICHER é um Agente Financeiro Inteligente com IA Generativa criado para apoiar usuários na tomada de decisões financeiras mais conscientes.
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+Ele é capaz de:
 
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+Analisar dados financeiros pessoais
 
----
+Antecipar necessidades do cliente
 
-### 3. Prompts do Agente
+Personalizar recomendações financeiras
 
-Documente os prompts que definem o comportamento do seu agente:
+Garantir respostas confiáveis com estratégias anti-alucinação
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+O objetivo do MICHER é transformar dados financeiros em insights práticos, ajudando pessoas a terem mais controle, planejamento e educação financeira.
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
+📂 Estrutura do Repositório
+lab-bia-do-futuro/
 │
-├── 📄 README.md
+├── README.md                        # Este arquivo
+├── data/                            # Dados mockados do cliente
+│   ├── transacoes.csv
+│   ├── historico_atendimento.csv
+│   ├── perfil_investidor.json
+│   └── produtos_financeiros.json
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── docs/                            # Documentação do agente
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── src/                             # Protótipo funcional
+│   └── app.py                       # Aplicação do agente MICHER
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+├── examples/                        # Exemplos de implementação
+│   └── README.md
 │
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
-```
+└── assets/                          # Imagens, diagramas e materiais visuais
 
----
+🛠 O que Entregar
 
-## Dicas Finais
+Este projeto serve como base para a construção completa do agente MICHER, contemplando os seguintes entregáveis:
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+1️⃣ Documentação do Agente
+
+Definição do funcionamento do MICHER:
+
+Caso de uso
+
+Persona e tom de voz
+
+Arquitetura
+
+Estratégias de segurança e confiabilidade
+
+📄 Template: docs/01-documentacao-agente.md
+
+2️⃣ Base de Conhecimento
+
+Utilização de dados mockados para alimentar o agente:
+
+Histórico de transações
+
+Perfil do investidor
+
+Produtos financeiros disponíveis
+
+Histórico de atendimentos
+
+📄 Template: docs/02-base-conhecimento.md
+
+3️⃣ Prompts do Agente
+
+Documentação dos prompts que definem o comportamento do MICHER:
+
+System Prompt
+
+Exemplos de interação
+
+Tratamento de edge cases
+
+📄 Template: docs/03-prompts.md
+
+4️⃣ Aplicação Funcional
+
+Desenvolvimento de um protótipo funcional do MICHER:
+
+Chatbot interativo (Streamlit, Gradio ou similar)
+
+Integração com LLM (API ou modelo local)
+
+Conexão com a base de conhecimento
+
+📁 Pasta: src/
+
+5️⃣ Avaliação e Métricas
+
+Definição de métricas para avaliar a qualidade do agente:
+
+Precisão das respostas
+
+Coerência com o perfil do cliente
+
+Taxa de respostas seguras (anti-alucinação)
+
+📄 Template: docs/04-metricas.md
+
+6️⃣ Pitch
+
+Roteiro de apresentação do MICHER com duração máxima de 3 minutos, explicando:
+
+Problema
+
+Solução
+
+Demonstração
+
+Diferencial e impacto
+
+📄 Template: docs/05-pitch.md
+
+🚀 Como Usar
+1️⃣ Clonar o Repositório
+git clone https://github.com/JoaoPedro-gif/lab-bia-do-futuro.git
+cd lab-bia-do-futuro
+
+2️⃣ Preencher a Documentação
+
+Acesse a pasta docs/ e complete os templates com as definições do agente MICHER.
+
+3️⃣ Desenvolver o Protótipo
+
+Implemente a aplicação interativa do MICHER em src/app.py.
+
+4️⃣ Integrar com LLM
+
+Conecte o agente a um modelo de linguagem (OpenAI, Gemini, Claude ou similar) via API.
+
+📈 Próximos Passos
+
+✨ Finalizar a documentação do agente MICHER
+✨ Evoluir o protótipo funcional
+✨ Refinar prompts e métricas
+✨ Testar diferentes cenários de uso
+✨ Gravar o pitch de apresentação
+
+🤝 Contribuição
+
+Contribuições são bem-vindas!
+Você pode:
+
+Abrir Issues com sugestões
+
+Enviar Pull Requests
+
+Adicionar exemplos ou melhorias
